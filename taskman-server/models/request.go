@@ -246,11 +246,11 @@ type StartInstanceResult struct {
 }
 
 type StartInstanceResultData struct {
-	Id          int    `json:"id"`
-	ProcInstKey string `json:"procInstKey"`
-	ProcDefId   string `json:"procDefId"`
-	ProcDefKey  string `json:"procDefKey"`
-	Status      string `json:"status"`
+	Id          interface{} `json:"id"`
+	ProcInstKey string      `json:"procInstKey"`
+	ProcDefId   string      `json:"procDefId"`
+	ProcDefKey  string      `json:"procDefKey"`
+	Status      string      `json:"status"`
 }
 
 type RequestPreDataSort []*RequestPreDataTableObj
@@ -302,7 +302,7 @@ type InstanceStatusQuery struct {
 }
 
 type InstanceStatusQueryObj struct {
-	Id                int                        `json:"id"`
+	Id                interface{}                `json:"id"`
 	ProcDefId         string                     `json:"procDefId"`
 	ProcInstKey       string                     `json:"procInstKey"`
 	ProcInstName      string                     `json:"procInstName"`
@@ -311,13 +311,13 @@ type InstanceStatusQueryObj struct {
 }
 
 type InstanceStatusQueryNode struct {
-	Id        int    `json:"id"`
-	NodeId    string `json:"nodeId"`
-	NodeDefId string `json:"nodeDefId"`
-	NodeName  string `json:"nodeName"`
-	NodeType  string `json:"nodeType"`
-	Status    string `json:"status"`
-	OrderedNo string `json:"orderedNo"`
+	Id        interface{} `json:"id"`
+	NodeId    string      `json:"nodeId"`
+	NodeDefId string      `json:"nodeDefId"`
+	NodeName  string      `json:"nodeName"`
+	NodeType  string      `json:"nodeType"`
+	Status    string      `json:"status"`
+	OrderedNo string      `json:"orderedNo"`
 }
 
 type RequestProcessData struct {
