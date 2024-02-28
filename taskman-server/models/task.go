@@ -132,7 +132,7 @@ type PluginTaskFormDto struct {
 	FormMetaId       string                  `json:"formMetaId"`
 	ProcDefId        string                  `json:"procDefId"`
 	ProcDefKey       string                  `json:"procDefKey"`
-	ProcInstId       int                     `json:"procInstId"`
+	ProcInstId       interface{}             `json:"procInstId"`
 	ProcInstKey      string                  `json:"procInstKey"`
 	TaskNodeDefId    string                  `json:"taskNodeDefId"`
 	TaskNodeInstId   int                     `json:"taskNodeInstId"`

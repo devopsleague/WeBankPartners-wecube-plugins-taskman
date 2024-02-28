@@ -59,12 +59,12 @@ type TaskNodeInstances struct {
 	Description       interface{}   `json:"description"`
 	PreviousNodeIds   []interface{} `json:"previousNodeIds"`
 	SucceedingNodeIds []string      `json:"succeedingNodeIds"`
-	ProcInstID        int           `json:"procInstId"`
+	ProcInstID        interface{}   `json:"procInstId"`
 	ProcInstKey       string        `json:"procInstKey"`
-	ID                int           `json:"id"`
+	ID                interface{}   `json:"id"`
 }
 type ProcessInstance struct {
-	ID                int                 `json:"id"`
+	ID                interface{}         `json:"id"`
 	ProcInstKey       string              `json:"procInstKey"`
 	ProcInstName      string              `json:"procInstName"`
 	CreatedTime       string              `json:"createdTime"`
