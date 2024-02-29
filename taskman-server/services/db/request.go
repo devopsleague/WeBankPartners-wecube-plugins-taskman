@@ -2222,6 +2222,7 @@ func AppendUselessEntity(requestTemplateId, userToken string, cacheData *models.
 }
 
 func getDependEntity(succeeding []string, parent models.RequestCacheEntityAttrValue, preEntityList []*models.EntityTreeObj, entityList []*models.RequestCacheEntityValue, dependEntityMap map[string]*models.RequestCacheEntityAttrValue) {
+	log.Logger.Debug("getDependEntity", log.StringList("succeeding", succeeding), log.JsonObj("parent", parent), log.JsonObj("preEntityList", preEntityList), log.JsonObj("entityList", entityList))
 	if len(succeeding) == 0 {
 		return
 	}
