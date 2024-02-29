@@ -2192,6 +2192,9 @@ func AppendUselessEntity(requestTemplateId, userToken string, cacheData *models.
 			rootParent.DataValue = v.DataId
 		}
 	}
+	for _, v := range rootSucceeding {
+		entityDepMap[v] = []string{fmt.Sprintf("%s", rootParent.DataValue)}
+	}
 	// preEntityList -> in preData but no int boundValues
 	if len(preEntityList) == 0 {
 		return entityDepMap, nil
